@@ -1,0 +1,310 @@
+{
+  "last_node_id": 108,
+  "last_link_id": 421,
+  "nodes": [
+    {
+      "id": 108,
+      "type": "TransformNode",
+      "pos": [
+        3461.113037109375,
+        2890.39306640625
+      ],
+      "size": [
+        1044,
+        1280
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "bg_img",
+          "type": "IMAGE",
+          "link": 414
+        },
+        {
+          "name": "bg_depth_map",
+          "type": "IMAGE",
+          "link": 419
+        },
+        {
+          "name": "fg_img",
+          "type": "IMAGE",
+          "link": 420
+        },
+        {
+          "name": "fg_mask",
+          "type": "MASK",
+          "link": 421,
+          "shape": 7
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            418
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "TransformNode"
+      },
+      "widgets_values": [
+        0.3,
+        1,
+        0,
+        0,
+        "hologram",
+        "{\"offset\":[0.3855000000000003,0.36300000000000027],\"scale\":[0.22648024530411404,0.22648024530411404]}",
+        null
+      ]
+    },
+    {
+      "id": 7,
+      "type": "LoadImage",
+      "pos": [
+        3090.2900390625,
+        3342.2216796875
+      ],
+      "size": [
+        318.1574401855469,
+        412.062744140625
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            419
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "d2.png",
+        "image"
+      ]
+    },
+    {
+      "id": 4,
+      "type": "LoadImage",
+      "pos": [
+        3088.899658203125,
+        2838.749755859375
+      ],
+      "size": [
+        326.2268371582031,
+        423.33203125
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            414
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "d1.png",
+        "image"
+      ]
+    },
+    {
+      "id": 5,
+      "type": "LoadImage",
+      "pos": [
+        3091.84375,
+        3822.183349609375
+      ],
+      "size": [
+        306.62066650390625,
+        417.8311462402344
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            420
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": [
+            320
+          ],
+          "slot_index": 1
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "image (35).png",
+        "image"
+      ]
+    },
+    {
+      "id": 62,
+      "type": "InvertMask",
+      "pos": [
+        3193.613525390625,
+        4312.623046875
+      ],
+      "size": [
+        140,
+        26
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "mask",
+          "type": "MASK",
+          "link": 320
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": [
+            421
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "InvertMask"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 72,
+      "type": "PreviewImage",
+      "pos": [
+        4529.453125,
+        3078.92138671875
+      ],
+      "size": [
+        1061.989990234375,
+        1091.651123046875
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 418
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "PreviewImage"
+      },
+      "widgets_values": []
+    }
+  ],
+  "links": [
+    [
+      320,
+      5,
+      1,
+      62,
+      0,
+      "MASK"
+    ],
+    [
+      414,
+      4,
+      0,
+      108,
+      0,
+      "IMAGE"
+    ],
+    [
+      418,
+      108,
+      0,
+      72,
+      0,
+      "IMAGE"
+    ],
+    [
+      419,
+      7,
+      0,
+      108,
+      1,
+      "IMAGE"
+    ],
+    [
+      420,
+      5,
+      0,
+      108,
+      2,
+      "IMAGE"
+    ],
+    [
+      421,
+      62,
+      0,
+      108,
+      3,
+      "MASK"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.5730855330116931,
+      "offset": [
+        -2235.894168358885,
+        -2475.4116413613183
+      ]
+    },
+    "node_versions": {
+      "comfy-core": "0.3.10"
+    }
+  },
+  "version": 0.4
+}
