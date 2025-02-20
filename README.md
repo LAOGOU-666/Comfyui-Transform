@@ -1,9 +1,10 @@
 # Comfyui-Transform
 The simple implementation of the recraft sticker function
 
-Recraft贴图功能的简单实现，离理想效果差的远，无力优化遂开源
+Recraft贴图功能的简单实现，这一版解决了之前的一些技术难题，效果很棒！
 
 * 这个节点可以自由变换贴图，类似PS置换形变
+* 你可以使用它来实现2.5D贴图，logo贴图等更多创意！
 
 ![Image](./assets/show.gif)
 
