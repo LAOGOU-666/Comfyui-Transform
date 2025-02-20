@@ -28,8 +28,8 @@ Recraft贴图功能的简单实现，这一版解决了之前的一些技术难�
 # 如果您受益于本项目，不妨请作者喝杯咖啡，您的支持是我最大的动力
 
 <div style="display: flex; justify-content: left; gap: 20px;">
-    <img src="./assets/alipay.jpg" width="500" alt="支付宝收款码">
-    <img src="./assets/wechat.jpg" width="500" alt="微信收款码">
+    <img src="./assets/alipay.jpg" width="300" alt="支付宝收款码">
+    <img src="./assets/wechat.jpg" width="300" alt="微信收款码">
 </div>
 
 
