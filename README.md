@@ -8,6 +8,22 @@ Recraft贴图功能的简单实现，这一版解决了之前的一些技术难�
 
 ![Image](./assets/show.gif)
 
+# 安装说明
+
+1. 确保你已经安装了 Python 3.x。
+2. 克隆这个项目：
+   ```bash
+   git clone https://github.com/LAOGOU-666/Comfyui-Transform.git
+   ```
+3. 进入项目目录：
+   ```bash
+   cd Comfyui-Transform
+   ```
+4. 安装依赖：
+   ```bash
+   pip install -r requirements.txt
+   ```
+
 # 2025-02-20更新
 
 * 更新了three.min.js本地文件，解决了在ComfyUI中因网络问题无法正常显示的问题
