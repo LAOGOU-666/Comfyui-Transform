@@ -35,6 +35,18 @@ Recraft贴图功能的简单实现，这一版解决了之前的一些技术难�
 
 ![Image](./assets/show2.png)
 
+# 2025-4-28更新
+* 更新了继承坐标，缩放以及参数，支持批量操作
+
+# 后端版本出炉，相对于前端优化了多项问题，批量操作效果更稳定
+![Image](./assets/show4.png)
+
+买家秀
+
+![Image](./assets/show3.png)
+
+该后端版本为非公开版本，需要请详询下方联系方式
+
 # 商务合作
 
 <p style="font-size: 24px;">wechat: wenrulaogou2033</p>
